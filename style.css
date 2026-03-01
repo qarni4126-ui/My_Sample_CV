@@ -1,0 +1,102 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('image.png') center/cover no-repeat;
+}
+
+.section-title {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: orange;
+    display: block;
+    margin: 8px auto;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-section {
+    background: linear-gradient(45deg, #0d6efd, #6610f2);
+}
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+}
+/* Profile Image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Default Dark Mode */
+body {
+    background-color: #121212;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.navbar {
+    transition: all 0.4s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000;
+}
+
+body.light-mode .navbar {
+    background-color: #f8f9fa !important;
+}
+
+body.light-mode .nav-link,
+body.light-mode .navbar-brand {
+    color: black !important;
+}
+
+body.light-mode .card {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+body.light-mode .hero {
+    background: linear-gradient(135deg, #0d6efd, #6c757d);
+}
